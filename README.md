@@ -27,25 +27,42 @@ import numpy as np
 
 x=np.arange(0,10) y=np.arange(11,21)
 
-plt.scatter(x,y,c='g') plt.xlabel('X axis') plt.ylabel('Y axis') plt.title('Graph in 2D') plt.savefig('Test.png')
+plt.scatter(x,y,c='g') 
+plt.xlabel('X axis') 
+plt.ylabel('Y axis')
+ plt.title('Graph in 2D') 
+plt.savefig('Test.png')
 ```
 
 ![alt text](560719624-6f8d3714-99b0-465e-83ec-a550f65ba910.png)
 
 ```
-plt.plot(x,y,'r*',linestyle='dashed',linewidth=2, markersize=12) plt.xlabel('X axis') plt.ylabel('Y axis') plt.title('2d Diagram') plt.show()
+plt.plot(x,y,'r*',linestyle='dashed',linewidth=2, markersize=12) 
+plt.xlabel('X axis')
+ plt.ylabel('Y axis')
+  plt.title('2d Diagram')
+ plt.show()
 ```
 ![alt text](560719796-dd13fb36-efd3-4a4f-9f8d-401e74154cf3.png)
 
 
 ```
-plt.subplot(2,2,1) plt.plot(x,y,'r--') plt.subplot(2,2,2) plt.plot(x,y,'g*--') plt.subplot(2,2,3) plt.plot(x,y,'bo') plt.subplot(2,2,4) plt.plot(x,y,'go') plt.show()
+plt.subplot(2,2,1)
+ plt.plot(x,y,'r--') 
+plt.subplot(2,2,2)
+ plt.plot(x,y,'g*--')
+ plt.subplot(2,2,3) 
+plt.plot(x,y,'bo') plt.subplot(2,2,4) 
+plt.plot(x,y,'go')
+ plt.show()
 ```
 ![alt text](560719906-9b82eabb-9f19-407c-815b-2c1ca4066ba8.png)
 
 ```
-x = np.arange(1,11) y = 3 * x + 5 plt.title("Matplotlib demo")
- plt.xlabel("x axis caption") plt.ylabel("y axis caption") 
+x = np.arange(1,11) y = 3 * x + 5
+ plt.title("Matplotlib demo")
+ plt.xlabel("x axis caption") 
+ plt.ylabel("y axis caption") 
 plt.plot(x,y) 
 plt.show()
 ```
@@ -61,7 +78,8 @@ plt.title("sine wave form")
 Plot the points using matplotlib
 
 ```
-plt.plot(x, y) plt.show()
+plt.plot(x, y)
+plt.show()
 ```
 
 ```
@@ -69,9 +87,12 @@ x = np.arange(0, 5 * np.pi, 0.1) y_sin = np.sin(x) y_cos = np.cos(x)
 
 plt.subplot(2, 1, 1)
 
-plt.plot(x, y_sin,'r--') plt.title('Sine')
+plt.plot(x, y_sin,'r--')
+ plt.title('Sine')
 
-plt.subplot(2, 1, 2) plt.plot(x, y_cos,'g--') plt.title('Cosine')
+plt.subplot(2, 1, 2)
+ plt.plot(x, y_cos,'g--') 
+ plt.title('Cosine')
 
 plt.show()
 ```
@@ -81,7 +102,10 @@ Bar plot
 ```
 x = [2,8,10] y = [11,16,9]
 
-x2 = [3,9,11] y2 = [6,15,7] plt.bar(x, y) plt.bar(x2, y2, color = 'g') plt.title('Bar graph') plt.ylabel('Y axis') plt.xlabel('X axis')
+x2 = [3,9,11] y2 = [6,15,7] plt.bar(x, y) plt.bar(x2, y2, color = 'g') p
+lt.title('Bar graph') p
+lt.ylabel('Y axis') 
+plt.xlabel('X axis')
 
 plt.show()
 ```
@@ -90,7 +114,10 @@ plt.show()
 Histogram
 
 ```
-a = np.array([22,87,5,43,56,73,55,54,11,20,51,5,79,31,27]) plt.hist(a) plt.title("histogram") plt.show()
+a = np.array([22,87,5,43,56,73,55,54,11,20,51,5,79,31,27]) 
+plt.hist(a) 
+plt.title("histogram") 
+plt.show()
 ```
 
 ![alt text](560720406-151081c2-79c7-4a92-ae1b-d93058718d5f.png)
@@ -113,7 +140,9 @@ data = [np.random.normal(0, std, 100) for std in range(1, 4)]
 ```
 rectangular box plot
 ```
-plt.boxplot(data,vert=True,patch_artist=True); plt.show()
+plt.boxplot(data,vert=True,patch_artist=True); 
+
+plt.show()
 ```
 ![alt text](560720651-ca2e68c9-27cf-4de8-a556-24dfbc4b0cb3.png)
 
